@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-5xl font-bold dark:text-white;
+  }
+  h2 {
+    @apply text-4xl font-bold text-gray-900 dark:text-white;
+  }
+  h3 {
+    @apply text-3xl font-bold dark:text-white;
+  }
+  h4 {
+    @apply text-2xl font-bold dark:text-white;
+  }
+  h5 {
+    @apply text-lg font-bold dark:text-white;
+  }
+  p {
+    @apply dark:text-slate-400;
+  }
+  .input-style {
+    @apply block flex-1 md:flex-1 hover:bg-primary;
+  }
+  td {
+    @apply px-6 py-4 flex gap-1 justify-between text-slate-800 font-medium;
+  }
+}
+
+/* Swiper  */
+.cus-slider .swiper-button-prev,
+.cus-slider .swiper-button-next {
+  background: #ff4e6a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.cus-slider .swiper-pagination-bullet {
+  background: #ff4e6a;
+}
+
+.cus-slider .swiper-slide {
+  height: auto;
+}
+.cus-slider:not(.no-margin) .swiper-wrapper .swiper-slide {
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 15px;
+  color: white;
+}
